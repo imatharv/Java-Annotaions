@@ -11,7 +11,8 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Inherited
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MethodDetails {
+public @interface MethodDetails 
+{
 	String author()  default "Atharva";
 	String date();
 	int revision () default 1;
